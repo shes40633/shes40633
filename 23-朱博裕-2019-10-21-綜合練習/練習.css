@@ -1,0 +1,296 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+.nav{
+    width:100%;
+    height:100px;
+    background-color:blue;
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+ width:50px;
+ height:50px;
+ background-image: url('https://cdn.pixabay.com/photo/2018/09/03/11/52/autumn-3651043__340.png');
+ margin-left:20px;
+ margin-top:20px;
+}
+.link{
+    display:flex;
+    list-style-type: none;
+}
+ul li{
+    padding:20px 10px;
+}
+ul li a{
+    color:red;
+    text-decoration: none;
+}
+.content{
+    width:100%;
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+    
+}
+#head{
+    width:100%;
+    display:flex;
+    margin-top:20px;
+}
+.head-bg{
+    width:50%;
+    height:500px;
+    background-image:url('https://cdn.pixabay.com/photo/2016/01/03/00/09/whale-1118876__340.jpg') ;
+    background-size:cover;
+    background-position:center;
+    
+}
+.head-bg:hover{
+    background-image: url('https://cdn.pixabay.com/photo/2019/10/01/09/38/desert-4517723__340.jpg');
+}
+.head-text{
+    width:50%;
+    
+    text-align: justify;
+    margin-left:20px ;
+    padding:0 10px;
+}
+.head-texts{
+    font-size: 15px;
+    line-height:30px;
+    
+}
+#mid{
+    width:100%;
+
+
+}
+.mid-bg{
+    width: 100%;
+    height:100vh;
+    background-image: url('https://cdn.pixabay.com/photo/2019/01/21/20/27/mountain-3946804__340.jpg');
+    background-size:cover;
+    background-position:center;
+    margin-top:100px;
+    opacity: 0.5;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.mid-text{
+    background-color:gray;
+    padding:10px;
+    line-height:20px;
+    font-size:50px;
+}
+#finally{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:200px;
+}
+.finally-l{
+    width: 32%;
+    
+    text-align: justify;
+}
+.finally-m{
+    width: 32%;
+    
+    text-align: justify;
+}
+.finally-r{
+    width: 32%;
+    
+    text-align: justify;
+}
+.finally-lbg{
+    width:100%;
+    height:400px;
+    background-image: url('https://cdn.pixabay.com/photo/2019/07/21/19/02/blue-4353363__340.jpg');
+    background-size:cover;
+    background-position:center;
+    margin-top:100px;
+}
+.finally-mbg{
+    width:100%;
+    height:400px;
+    background-image: url('https://cdn.pixabay.com/photo/2019/10/07/13/39/cosmos-4532636__340.jpg');
+    background-size:cover;
+    background-position:center;
+    margin-top:100px;
+}
+.finally-rbg{
+    width:100%;
+    height:400px;
+    background-image: url('https://cdn.pixabay.com/photo/2019/10/01/10/17/venice-4517780__340.jpg');
+    background-size:cover;
+    background-position:center;
+    margin-top:100px;
+}
+.finlly-ltext{
+    width:100%;
+
+    border:0.5px solid black;
+}
+.finlly-mtext{
+    width:100%;
+
+    border:0.5px solid black;
+}
+.finlly-rtext{
+    width:100%;
+
+    border:0.5px solid black;
+}
+.article-l{
+    font-size:20px;
+    line-height:20px;   
+}
+.article-m{
+    font-size:20px;
+    line-height:20px;   
+}
+.article-r{
+    font-size:20px;
+    line-height:20px;   
+}
+.footer{
+    width:80%;
+    margin:0 auto;
+    background-color: gray;
+}
+.footer-text{
+    
+
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width:991px){
+
+.nav{
+    width:100%;
+    height:80px;
+    position: relative;
+    display: flex;
+}
+.link{
+    position: absolute;
+    flex-direction: column;
+    z-index: 2;
+    padding:0;
+    background-color: black;
+    margin-top:50px;
+    display:none ;
+}
+ul li{
+    padding:10px 10px;
+}
+.logo{
+    order:2;
+    display:none;
+}
+.btn{
+   width:50px;
+   height:50px;
+   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAXVBMVEUAAAD///9QUFDc3NyGhoZtbW1CQkLi4uL4+PjJyck3NzeSkpJ5eXleXl7w8PCtra3p6ekkJCQJCQlmZmakpKTCwsJKSkrR0dEfHx88PDyCgoJycnIVFRW0tLQuLi5nGG0KAAAB+klEQVR4nO3dWW7CUBBE0dcQsM08z2T/y8wjKCL/qLokc88OrjwIN40pBQAAAAAAAAAAAAAAAAAAwO88yHbOzJs24dBMk/rmlryneUbgzBgYMdMHOo/gg/4otubCVh04NQdGqG83nrvof4240N1XaQPH7rxqLC0cuPOqAYUUUmhHIYUU+lH4nrM7rxIPbNx5of7kXYbuvhiKCy/uwLiIC8vCHLhQB9qfELVPh79G1sCRPrCUycrWt5pkBFajzjFTbLuUAwgAAAAAAHplMsqXNaOpbnfP6ld7v+UEOsfe8oH3w84YGLHTB3rXSzMWTM2B8i/XzOfog/o89U30/6zEhe6+UJ+mB3dedZAW9n8Xg8IMFFJIoR+FFH564bc7r/qWFvb/k3c5uvviKC68ugPjKi60/wBR/fPDUtbmwrW8sEysgSmD743vbnPcZARW42WTP9dvm2XCfjAAAAAAAOiZ7Ve+bV7euEsf0jx1SYMa5+JXwmpiKXtjYMReH+h+caL8La0nc2CEehN66Q6MpbjQ/fpS/as/3H3B9uW7+r+LQWEGCimk0I9CCj+90L0R9SDeinLnhXz70jWEeunEhf4LUXsZFv8KrXqBtrif8uV/UVKdnG8wXZwSCp3TKPUU6mXaDfN1WX9oBQAAAAAAAAAAAAAAAAAAAAAA0G8/nik3cN0tamIAAAAASUVORK5CYII=');
+   background-size:cover;
+   background-position:center;
+   margin:10px 0 0 10px;
+   position: relative;
+}
+.btn:hover .link{
+    display: flex;
+}
+.content{
+    display:flex;
+}
+#head{
+    flex-direction: column-reverse;
+}
+.head-bg{
+    width:100%;
+    height:50vh;
+    background-image:url('https://cdn.pixabay.com/photo/2016/01/03/00/09/whale-1118876__340.jpg') ;
+    background-size:cover;
+    background-position:center;
+    margin-top:10px;
+}
+.head-bg:hover{
+    background-image: url('https://cdn.pixabay.com/photo/2019/10/01/09/38/desert-4517723__340.jpg');
+}
+.head-text{
+    width:100%;
+    background-color:gray;
+    text-align: justify;
+    margin:0;
+    padding:0;
+}
+.head-texts{
+    font-size: 15px;
+    line-height:40px;
+    
+}
+.mid-text{
+    display:none;
+}
+#finally{
+    display: block;
+    margin:0;
+}
+.finally-l{
+    width:100%;
+}
+.finally-m{
+    width:100%;
+}
+.finally-r{
+    width:100%;
+}
+
+.finally-lbg{
+  width:100%;
+  height:250px;
+}
+.finlly-ltext{
+    width:100%;
+
+}
+.article-l{
+    line-height: 40px;
+}
+.finally-mbg{
+    width:100%;
+    height:250px;
+    margin:0;
+    margin-top:5px;
+  }
+  .finlly-mtext{
+      width:100%;
+
+  }
+  .article-m{
+      line-height: 40px;
+  }
+  .finally-rbg{
+    width:100%;
+    height:250px;
+    margin:0;
+    margin-top:5px;
+  }
+  .finlly-rtext{
+      width:100%;
+ 
+  }
+  .article-r{
+      line-height: 40px;
+  }
+
+
+}
