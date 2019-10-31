@@ -62,25 +62,25 @@
 <body>
     <div class="all">
         <div id="tab">
-            <div id="tab_btn_1" class="tab_btn active">tab1</div>
-            <div id="tab_btn_2" class="tab_btn">tab2</div>
-            <div id="tab_btn_3" class="tab_btn">tab3</div>
+            <div  class="tab_btn active">tab1</div>
+            <div  class="tab_btn">tab2</div>
+            <div  class="tab_btn">tab3</div>
         </div>
 
         <div id="content">
-            <div id="content_tab_1" class="content_tab show">
+            <div  class="content_tab show">
                 <h1>title1</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore soluta cupiditate eius eum
                     aliquam non quidem similique id explicabo nobis, impedit pariatur minus eveniet ipsam, tempora
                     laudantium labore, est ut?</p>
             </div>
-            <div id="content_tab_2" class="content_tab">
+            <div  class="content_tab">
                 <h1>title2</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsa odit cupiditate maxime ut modi
                     dignissimos delectus aperiam, ipsum veniam totam, necessitatibus ratione doloribus porro id suscipit
                     distinctio. Quibusdam, delectus!</p>
             </div>
-            <div id="content_tab_3" class="content_tab">
+            <div  class="content_tab">
                 <h1>title3</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae ipsum dolorem similique
                     architecto ab expedita eius voluptatem quod animi praesentium totam, ea quae possimus eligendi dolor
@@ -103,12 +103,13 @@
       
         var tab_btn = document.querySelectorAll(".tab_btn");
         var content_tab = document.querySelectorAll(".content_tab");
+        function clear() {
         for(let i = 0 ; i < tab_btn.length ; i++){
             const tab_clear =tab_btn[i];
             console.log(tab_clear);
-            function clear() {
+            
                 tab_clear.classList.remove("active");
-                
+                content_tab[i].classList.remove("active");
             }
         }
         for (let i = 0 ;i < tab_btn.length ; i++ ){
