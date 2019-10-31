@@ -89,30 +89,22 @@
         </div>
 
     </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <script>
-
-  
+    $(".tab_btn").click(function () {
+       $(".tab_btn").removeClass("active");
+       $(this).addClass("active");
+       var index = $(".tab_btn").index(this);
+       $(".content_tab").removeClass("show");
+       $(`.content_tab:nth-child(${index+1})`).addClass("show");
+    });
 
       
-        var tab_btn = document.querySelectorAll(".tab_btn");
-        var content_tab = document.querySelectorAll(".content_tab");
-        function clear() {
-        for(let i = 0 ; i < tab_btn.length ; i++){
-            const tab_clear =tab_btn[i];
-            console.log(tab_clear);
-            
-                tab_clear.classList.remove("active");
-                content_tab[i].classList.remove("show");
-            }
-        }
-        for (let i = 0 ;i < tab_btn.length ; i++ ){
-            const btn = tab_btn[i];
-            btn.onclick = function () {
-            clear();
-            btn.classList.add("active");
-            content_tab[i].classList.add("show");
-        }
-        }
+
+
 
 
     </script>
