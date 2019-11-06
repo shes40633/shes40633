@@ -9,17 +9,22 @@
 </head>
 <style>
     .card {
-        width: 200px;
-        height: 230px;
-        border: 1px solid black;
+     
+        
+        display: flex;
+        flex-wrap: wrap;
     }
+
 
     h1 {
         margin: 0;
         margin-left: 5px;
         margin-top: 5px;
     }
-
+    .weather_card{
+        border: 1px solid black ;
+        padding:20px 10px;
+    }
     .time {
         margin: 0;
         color: gray;
@@ -31,17 +36,17 @@
         margin: 0;
         margin-top: 15px;
         margin-left: 30px;
-        font-size: 60px;
+        font-size: 40px;
     }
 </style>
 
 <body>
     <div class="card">
-        <div class="weather_card">
+        <!-- <div class="weather_card">
             <h1 class="area">台中市</h1>
             <p class="time">時間</p>
-            <p class="temperature">25</p>
-        </div>
+            <p class="temperature">25-30c</p>
+        </div> -->
     </div>
 
     </div>
@@ -52,7 +57,7 @@
 
 
         var card = document.querySelector(".card");
-   
+
 
         $.ajax({
             url: "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D",
@@ -60,12 +65,21 @@
             success: function (res) {
                 console.log(res);
                 var all_location = res.records.location
-                console.log(location);
-                all_location.forEach( location => {
-                    var wx =records.location[0].weatherElement[0].time[0].parameter.parameterName;
+                console.log(all_location);
+                all_location.forEach(location => {
+                    var locationName = location.locationName;
+                    var wx = location.weatherElement[0].time[0].parameter.parameterName;
+                    var pop = location.weatherElement[1].time[0].parameter.parameterName;
+                    var mint = location.weatherElement[2].time[0].parameter.parameterName;
+                    var maxt = location.weatherElement[4].time[0].parameter.parameterName;
 
+                    card.innerHTML += `<div class="weather_card">
+                                     <h1 class="area">${locationName}</h1>
+                                     <p class="time">${wx}</p>
+                                     <p class="temperature">${mint}-${maxt}c</p>
+                                     </div>`;
                 });
-          
+
 
             }
         });
