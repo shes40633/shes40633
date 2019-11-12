@@ -10,22 +10,165 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
-          img{
-            padding:15px;
+        * {
+            box-sizing: border-box;
         }
-        h1{
-            padding: 5px;
-            font-size:25px;
+
+        body {
+
+            margin: 0;
+            font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
         }
-        p{
-            padding: 25px;
+
+        nav {
+            height: 49px;
+            background-color: black;
+            color: white;
         }
-        .info{
+
+        .nav_container {
+            width: 1536px;
+            height: 49px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 190px;
+            height: 49px;
+            flex: 0 0 auto;
+        }
+
+        .title h1 {
+            color: white;
+            margin: 0;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 48px;
+        }
+
+        .navbur {
+            padding: 0px 120px 0px 420px;
+            flex-grow: 1;
+
+        }
+
+        .nav-content {
+            height: 49px;
+            padding: 0px;
+            margin: 0;
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+
+
+        }
+
+
+        .nav-content li {
+            line-height: 49px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .nav-content li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .mobile_nav_toggle {
+            display: none;
+            position: absolute;
+            top: 0px;
+            right: 10px;
+            height: 48px;
+            width: 48px;
+        }
+
+        .mobile_nav_toggle span {
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+            transition: all 200ms linear 0ms;
+        }
+
+        .mobile_nav_toggle span.top-bar {
+            top: 17px;
+            left: 12px;
+            transform: rotate(0deg);
+        }
+
+        .mobile_nav_toggle span.middle-bar {
+            top: 24px;
+            left: 12px;
+            opacity: 1;
+        }
+
+        .mobile_nav_toggle span.bottom-bar {
+            top: 31px;
+            left: 12px;
+            transform: rotate(0deg);
+
+        }
+
+        .mobile_nav {
+            /* display: none; */
+            opacity: 0;
+            pointer-events: none;
+            position: fixed;
+            top: 49px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 49px);
+            background-color: black;
+            transition: 1s;
+        }
+
+        .mobile_nav.active {
+            /* display: block; */
+            opacity: 1;
+            pointer-events: all;
+        }
+
+
+        .mobile_nav ul {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+
+        .mobile_nav ul a {
+            color: rgb(255, 255, 255);
+            position: relative;
+            display: block;
+            text-decoration: none;
+            padding: 25px 30px;
+        }
+
+
+        /* main程式 */
+        .main {
+            width: 100%;
+            margin: 145px 0px 60px;
+        }
+        .main_container{
+
+        }
+
+
+        /* bootstrap程式 */
+        .info {
             overflow: hidden;
         }
-        .info .row{
+
+        .info .row {
             position: relative;
         }
 
@@ -36,50 +179,51 @@
             height: 100%;
             position: absolute;
             top: 0px;
-            left:-50%;
+            left: -50%;
             background-color: rgb(34, 128, 200);
         }
-      
+
 
         .info a {
             color: black;
             text-decoration: none;
         }
-  
+
 
         .info .col-xl-3:nth-child(1) {
             background-color: rgb(12, 117, 197);
-            z-index: 1;
+
         }
-        
+
 
         .info .col-xl-3:nth-child(2) {
             background-color: rgb(79, 229, 255);
-            z-index: 1;
+
         }
 
         .info .col-xl-3:nth-child(3) {
             background-color: rgb(207, 143, 255);
-            z-index: 1;
+
         }
 
         .info .col-xl-3:nth-child(4) {
             background-color: rgb(105, 229, 110);
-            z-index: 1;
+
         }
-        .info .col-xl-3:nth-child(1):hover{
+
+        .info .col-xl-3:nth-child(1):hover {
             background-color: rgb(37, 142, 222);
         }
 
-        .info .col-xl-3:nth-child(2):hover{
+        .info .col-xl-3:nth-child(2):hover {
             background-color: rgb(54, 204, 230);
         }
 
-        .info .col-xl-3:nth-child(3):hover{
+        .info .col-xl-3:nth-child(3):hover {
             background-color: rgb(182, 118, 230);
         }
 
-        .info .col-xl-3:nth-child(4):hover{
+        .info .col-xl-3:nth-child(4):hover {
             background-color: rgb(80, 204, 85);
         }
 
@@ -94,45 +238,161 @@
             right: -50%;
             background-color: rgb(95, 207, 99);
         }
-        @media (max-width: 1024px){
+
+        @media(max-width:1680px) {
+
+            .nav_container {
+                width: 1336px;
+            }
+        }
+
+        @media(max-width:1460px) {
+
+
+            .navbur {
+                padding: 0px 60px 0px 120px;
+            }
+
+            .nav_container {
+                width: 1136px;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            .nav_container {
+                width: 960px;
+            }
+
+
 
         }
 
+        @media (max-width: 1024px) {
+            .nav_container {
+                padding: 0px 30px;
+                width: 100%;
+            }
 
+            .logo {
+                width: 60px;
+            }
+
+            .navbur {
+                padding: 0 0 0 120px;
+
+            }
+
+        }
+
+        @media (max-width: 767px) {
+            .navbur {
+                display: none;
+
+
+            }
+
+            .mobile_nav_toggle {
+                display: block;
+
+            }
+        }
+
+        @media (max-width: 670px) {
+            nav .logo {
+                width: 30px;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <div class="all">
+        <nav>
+            <div class="nav_container">
+                <div class="logo"></div>
+                <div class="title">
+                    <h1>Fluent Design System</h1>
+                </div>
+                <div class="navbur">
+                    <ul class="nav-content">
+                        <li><a href="">web</a></li>
+                        <li><a href="">windows</a></li>
+                        <li><a href="">ios</a></li>
+                        <li><a href="">android</a></li>
+                    </ul>
+                </div>
+                <div class="mobile_nav_toggle">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </div>
+                <div class="mobile_nav">
+                    <ul>
+                        <li>
+                            <a href="">Web</a>
+                        </li>
+                        <li>
+                            <a href="">Windows</a>
+                        </li>
+                        <li>
+                            <a href="">iOS</a>
+                        </li>
+                        <li>
+                            <a href="">Android</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="mian">
+        <div class="main_container">
+            <div class="main_content">
+                <div class="main_title"></div>
+                <div class="main_text_container">
+                    <div class="main_text">
+                        <p> Fluent brings the fundamentals of principled design, innovation in technology, and customer
+                            needs together as one. It’s a collective approach to creating simplicity and coherence
+                            through a shared, open design system across platforms.</p>
+                        <p>Open ecosystem, open design system.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_picture">
+                
+            </div>
+        </div>
+    </div>
     <div class="info">
         <div class="container">
             <div class="row">
-                <div class="col-xl-3 col-md-6 col-12"data-aos="fade-up" >
-                    <a  href="">
-                            <img src="/img/icon-globe.svg" alt=""> 
+                <div class="col-xl-3 col-md-6 col-12">
+                    <a href="">
+                        <img src="/img/icon-globe.svg" alt="">
                         <h2>web</h2>
                         <p>Create your own web apps and add-ins.</p>
                         <span></span> <span>Get started</span>
                     </a>
                 </div>
-                <div class="col-xl-3 col-md-6 col-12"data-aos="fade-up" data-aos-duration="1000" >
-                    <a  href="">
-                            <img src="/img/icon-windows.svg" alt=""> 
+                <div class="col-xl-3 col-md-6 col-12">
+                    <a href="">
+                        <img src="/img/icon-windows.svg" alt="">
                         <h2>windows</h2>
                         <p>Create and publish your own Windows apps.</p>
                         <span></span> <span>Get started</span>
                     </a>
                 </div>
-                <div class="col-xl-3 col-md-6 col-12"data-aos="fade-up" data-aos-duration="1500">
-                    <a  href="">
-                            <img src="/img/icon-ios.svg" alt=""> 
+                <div class="col-xl-3 col-md-6 col-12">
+                    <a href="">
+                        <img src="/img/icon-ios.svg" alt="">
                         <h2>ios</h2>
                         <p>Take your custom apps to the mobile market.</p>
                         <span></span> <span>Get started</span>
                     </a>
                 </div>
-                <div class="col-xl-3 col-md-6 col-12" data-aos="fade-up" data-aos-duration="2000">
-                    <a  href="">
-                            <img src="/img/icon-android.svg" alt=""> 
+                <div class="col-xl-3 col-md-6 col-12">
+                    <a href="">
+                        <img src="/img/icon-android.svg" alt="">
                         <h2>Android</h2>
                         <p>Take your custom apps to the mobile market.</p>
                         <span></span> <span>Get started</span>
@@ -153,10 +413,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-                AOS.init();
-              </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+
+        var mobile_nav_toggle = document.querySelector(".mobile_nav_toggle");
+        var mobile_nav = document.querySelector(".mobile_nav")
+        mobile_nav_toggle.onclick = function () {
+
+            mobile_nav.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
