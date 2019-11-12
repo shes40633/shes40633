@@ -17,7 +17,7 @@
         }
 
         body {
-
+            padding: 0px;
             margin: 0;
             font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
         }
@@ -156,11 +156,34 @@
         /* main程式 */
         .main {
             width: 100%;
-            margin: 145px 0px 60px;
+            position: relative;
+            margin: 48px 0px 0px 0px;
         }
-        .main_container{
 
+        .main_container {
+            width: 100%;
+            margin: 145px 0px 60px 0px;
+            
         }
+
+
+        .main_content {
+            display: flex;
+            width: 1336px;
+            margin: 0 auto;
+        }
+
+        .main_content_all {
+            width: 410px;
+            flex: 0 0 auto;
+        }
+
+        .main_picture {
+            text-align: center;
+            position: relative;
+            flex: 1 1 auto;
+        }
+
 
 
         /* bootstrap程式 */
@@ -348,58 +371,65 @@
     <div class="mian">
         <div class="main_container">
             <div class="main_content">
-                <div class="main_title"></div>
-                <div class="main_text_container">
-                    <div class="main_text">
-                        <p> Fluent brings the fundamentals of principled design, innovation in technology, and customer
-                            needs together as one. It’s a collective approach to creating simplicity and coherence
-                            through a shared, open design system across platforms.</p>
-                        <p>Open ecosystem, open design system.</p>
+                <div class="main_content_all">
+                    <div class="main_title">
+                        <h2 class="Heading-sc-1iendvq-4 lchIkX">Fluent Design System</h2>
+                    </div>
+                    <div class="main_text_container">
+                        <div class="main_text">
+                            <p> Fluent brings the fundamentals of principled design, innovation in technology, and
+                                customer
+                                needs together as one. It’s a collective approach to creating simplicity and coherence
+                                through a shared, open design system across platforms.</p>
+                            <p>Open ecosystem, open design system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_picture">
+                    <img src="./img/icon-fluent@1x.png">
+                </div>
+            </div>
+
+        </div>
+        <div class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <a href="">
+                            <img src="/img/icon-globe.svg" alt="">
+                            <h2>web</h2>
+                            <p>Create your own web apps and add-ins.</p>
+                            <span></span> <span>Get started</span>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <a href="">
+                            <img src="/img/icon-windows.svg" alt="">
+                            <h2>windows</h2>
+                            <p>Create and publish your own Windows apps.</p>
+                            <span></span> <span>Get started</span>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <a href="">
+                            <img src="/img/icon-ios.svg" alt="">
+                            <h2>ios</h2>
+                            <p>Take your custom apps to the mobile market.</p>
+                            <span></span> <span>Get started</span>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <a href="">
+                            <img src="/img/icon-android.svg" alt="">
+                            <h2>Android</h2>
+                            <p>Take your custom apps to the mobile market.</p>
+                            <span></span> <span>Get started</span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="main_picture">
-                
-            </div>
         </div>
-    </div>
-    <div class="info">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-md-6 col-12">
-                    <a href="">
-                        <img src="/img/icon-globe.svg" alt="">
-                        <h2>web</h2>
-                        <p>Create your own web apps and add-ins.</p>
-                        <span></span> <span>Get started</span>
-                    </a>
-                </div>
-                <div class="col-xl-3 col-md-6 col-12">
-                    <a href="">
-                        <img src="/img/icon-windows.svg" alt="">
-                        <h2>windows</h2>
-                        <p>Create and publish your own Windows apps.</p>
-                        <span></span> <span>Get started</span>
-                    </a>
-                </div>
-                <div class="col-xl-3 col-md-6 col-12">
-                    <a href="">
-                        <img src="/img/icon-ios.svg" alt="">
-                        <h2>ios</h2>
-                        <p>Take your custom apps to the mobile market.</p>
-                        <span></span> <span>Get started</span>
-                    </a>
-                </div>
-                <div class="col-xl-3 col-md-6 col-12">
-                    <a href="">
-                        <img src="/img/icon-android.svg" alt="">
-                        <h2>Android</h2>
-                        <p>Take your custom apps to the mobile market.</p>
-                        <span></span> <span>Get started</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+
     </div>
 
     <!-- Optional JavaScript -->
