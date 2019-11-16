@@ -317,15 +317,18 @@ nav {
 }
 .card_2_container{
   position: relative;
-    width: 1536px;
-    margin: 0px auto;
+  width: 1536px;
+  margin: 0px auto;
 }
 .card_2_bg{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 60px 30px;
+  
 }
-.card_2_bg img{
-  margin: 0 auto;
-}
+
 /* card3程式 */
 .card_3{
   width: 100%;
