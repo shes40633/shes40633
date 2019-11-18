@@ -352,6 +352,28 @@ nav {
     margin: 0px;
     color:white;
 }
+/* card_4程式 */
+.card_4{
+  width: 100%;
+    position: relative;
+}
+.card_4_content{
+  position: absolute;
+    bottom: 80px;
+    left: 0px;
+    width: 100%;
+    z-index: 4;
+}
+.card_4_text{
+  width: 960px;
+  margin:0 auto;
+}
+.card_4_text h2{
+  font-size: 96px;
+    line-height: 104px;
+  font-weight: 600;
+    margin: 0px 0px 0px 26px;
+}
 
 @media(max-width:1680px) {
 
