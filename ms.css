@@ -365,7 +365,7 @@ nav {
     z-index: 4;
 }
 .card_4_text{
-  width: 960px;
+  width: 1536px;
   margin:0 auto;
 }
 .card_4_text h2{
@@ -373,6 +373,58 @@ nav {
     line-height: 104px;
   font-weight: 600;
     margin: 0px 0px 0px 26px;
+}
+.card_4_pic img{
+  width: 100%;
+}
+/* card_5程式 */
+.card_5{
+  width:100%;
+  z-index: 1;
+  min-height: 948px;
+  background-image: url("https://www.microsoft.com/design/fluent/assets/images/clouds.jpg");
+  position: relative;
+  top:0;
+}
+.card_5_container{
+  position: relative;
+  display: flex;
+  width: 1536px;
+  margin:0 auto;
+}
+.card_5_pic{
+  position: absolute;
+    top: -240px;
+    right: -260px;
+    width: 768px;
+}
+.card_5_pic img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.card_5_pic_an img{
+  top: -120px;
+  left: 2px;
+  z-index: 2;
+}
+.card_5_texttop h2{
+  position: absolute;
+    top: -100px;
+    left: 0px;
+    font-size: 395px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.card_5_textbot h2{
+  position: absolute;
+    top: 140px;
+    right: -30px;
+    font-size: 395px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
 }
 
 @media(max-width:1680px) {
