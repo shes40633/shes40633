@@ -144,7 +144,8 @@ nav {
 .main {
   width: 100%;
   position: relative;
-  margin: 48px 0px 0px 0px;
+  overflow-x: hidden;
+  margin: 48px 0px 0px;
 }
 
 .main_container {
@@ -788,8 +789,133 @@ nav {
   transition: color 200ms linear 0ms;
 }
 
+/* card_9程式 */
+.card_9{
+  width: 100%;
+}
+.card_9_container{
+  width: 1536px;
+    margin: 0px auto;
+}
+.card_9_content{
+  width: 100%;
+}
+.card_9_text{
+  width: 100%;
+    display: flex;
+    padding: 0px 0px 200px;
+}
+.card_9_text_left{
+  width: 575px;
+    flex: 0 0 auto;
+}
+.card_9_text_right{
+  flex: 1 1 auto;
+    padding: 0px 330px 35px 208px;
+}
+.card_9_text_left h2{
+  font-size: 32px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 0px 0px 0px 16px;
+}
+.card_9_text_right_up{
+  width: 100%;
+}
+.card_9_text_right_down{
+  width: 100%;
+    margin: 70px 0px 0px;
+}
+.card_9_text_right_up p{
+  color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.card_9_text_right_down a{
+  display: flex;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.card_9_text_right_down a span{
+  font-size: 16px;
+    font-family: "Segoe UI Mono", mono;
+    letter-spacing: 0.01rem;
+    line-height: 1;
+}
 
+/* footer程式 */
+.footer{
+  width: 100%;
+    height: 48px;
+}
+.footer_container{
+  display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 1536px;
+    margin: 0px auto;
+}
+.footer_logo{
+  width: 190px;
+    height: 48px;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+.footer_logo a{
+  opacity: 1;
 
+}
+.footer_logo a svg{
+  width: 16px;
+}
+.footer_content{
+  height: 48px;
+    flex: 1 1 auto;
+    padding: 0px 100px 0px 0px;
+}
+.footer_content ul{
+  width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.footer_content ul li{
+  width: auto;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 48px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+.footer_content ul li a{
+  color: rgb(255, 255, 255);
+    position: relative;
+    text-decoration: none;
+}
+.footer_fb{
+  display: flex;
+    height: 48px;
+}
+.footer_fb a{
+  width: 48px;
+    height: 48px;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+}
 @media(max-width:1680px) {
 
   .nav_container {
