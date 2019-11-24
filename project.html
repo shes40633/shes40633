@@ -1,257 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
-<style>
-* {
-  box-sizing: border-box;
-}
-body{
-    padding: 0px;
-    margin: 0px;
-}
-nav {
-  height: 80px;
-  background-color: black;
-  color: white;
-}
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<link rel="stylesheet" href="path/to/swiper.min.css">
+<link rel="stylesheet" href="project.css">
 
-.nav_container {
-  width: 1536px;
-  height: 80px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  width: 190px;
-  height: 80px;
-  flex: 0 0 auto;
-}
-
-
-
-.navbur {
-  padding: 0px 120px 0px 420px;
-  flex-grow: 1;
-
-}
-
-.nav-content {
-  height: 80px;
-  padding: 0px;
-  margin: 0;
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-
-
-}
-
-
-.nav-content li {
-  line-height: 80px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.nav-content li a {
-  color: white;
-  text-decoration: none;
-
-}
-
-.mobile_nav_toggle {
-  display: none;
-  position: absolute;
-  top: 0px;
-  right: 10px;
-  height: 80px;
-  width: 80px;
-}
-
-.mobile_nav_toggle span {
-  position: absolute;
-  width: 24px;
-  height: 3px;
-  background-color: rgb(255, 255, 255);
-  transition: all 200ms linear 0ms;
-}
-
-.mobile_nav_toggle span.top-bar {
-  top: 27px;
-  left: 15px;
-  transform: rotate(0deg);
-}
-
-.mobile_nav_toggle span.middle-bar {
-  top: 34px;
-  left: 15px;
-  opacity: 1;
-}
-
-.mobile_nav_toggle span.bottom-bar {
-  top: 41px;
-  left: 15px;
-  transform: rotate(0deg);
-
-}
-
-.mobile_nav {
-  /* display: none; */
-  opacity: 0;
-  pointer-events: none;
-  position: fixed;
-  top: 49px;
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 49px);
-  background-color: black;
-  transition: 1s;
-}
-
-.mobile_nav.active {
-  /* display: block; */
-  opacity: 1;
-  pointer-events: all;
-}
-
-
-.mobile_nav ul {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-
-.mobile_nav ul a {
-  color: rgb(255, 255, 255);
-  position: relative;
-  display: block;
-  text-decoration: none;
-  padding: 25px 30px;
-}
-
-
-
-@media(max-width:1680px) {
-
-.nav_container {
-    width: 1336px;
-}
-}
-@media(max-width:1460px) {
-
-
-.navbur {
-    padding: 0px 60px 0px 120px;
-}
-
-.nav_container {
-    width: 1136px;
-}
-
-}
-@media (max-width: 1280px) {
-  .nav_container {
-      width: 960px;
-  }
-
-}
-@media (max-width: 1024px) {
-  .nav_container {
-      padding: 0px 30px;
-      width: 100%;
-  }
-
-  .logo {
-      width: 60px;
-  }
-
-  .navbur {
-      padding: 0 0 0 120px;
-
-  }
-
-
-}
-@media (max-width: 767px) {
-  .navbur {
-      display: none;
-
-
-  }
-  .mobile_nav_toggle {
-      display: block;
-
-  }
-}
-@media (max-width: 670px) {
-  nav .logo {
-      width: 30px;
-  }
-
-}
-</style>
 <body>
 
-    <div class="all">
-        <nav>
-            <div class="nav_container">
-                <div class="logo">
-                    <img src="">
-                </div>
-               
-                <div class="navbur">
-                    <ul class="nav-content">
-                        <li><a href="">關於電影</a></li>
-                        <li><a href="">票價資訊</a></li>
-                        <li><a href="">關於親親</a></li>
-                        <li><a href="">交通資訊</a></li>
-                        <li><a href="">哈拉麵包</a></li>
-                    </ul>
-                </div>
-                <div class="mobile_nav_toggle">
-                    <span class="top-bar"></span>
-                    <span class="middle-bar"></span>
-                    <span class="bottom-bar"></span>
-                </div>
-                <div class="mobile_nav">
-                    <ul>
-                        <li>
-                            <a href="">關於電影</a>
-                        </li>
-                        <li>
-                            <a href="">票價資訊</a>
-                        </li>
-                        <li>
-                            <a href="">關於親親</a>
-                        </li>
-                        <li>
-                            <a href="">交通資訊</a>
-                        </li>
-                        <li>
-                            <a href="">哈拉麵包</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <script>
+  <div class="all">
+    <nav>
+      <div class="nav_container">
+        <div class="logo">
+          <img src="">
+        </div>
 
-            var mobile_nav_toggle = document.querySelector(".mobile_nav_toggle");
-            var mobile_nav = document.querySelector(".mobile_nav")
-            mobile_nav_toggle.onclick = function () {
-    
-                mobile_nav.classList.toggle('active');
-            }
-        </script>
+        <div class="navbur">
+          <ul class="nav-content">
+            <li><a href="">關於電影</a></li>
+            <li><a href="">票價資訊</a></li>
+            <li><a href="">關於親親</a></li>
+            <li><a href="">交通資訊</a></li>
+            <li><a href="">哈拉麵包</a></li>
+          </ul>
+        </div>
+        <div class="mobile_nav_toggle">
+          <span class="top-bar"></span>
+          <span class="middle-bar"></span>
+          <span class="bottom-bar"></span>
+        </div>
+        <div class="mobile_nav">
+          <ul>
+            <li>
+              <a href="">關於電影</a>
+            </li>
+            <li>
+              <a href="">票價資訊</a>
+            </li>
+            <li>
+              <a href="">關於親親</a>
+            </li>
+            <li>
+              <a href="">交通資訊</a>
+            </li>
+            <li>
+              <a href="">哈拉麵包</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- banner -->
+  <div class="banner">
+    <div class="banner_picture">
+      <img src="./img//專題bnner.jpg">
+    </div>
+  </div>
+  
+  <!-- 熱售中 -->
+  <div class="sale">
+    <div class="sale_text">
+      <p>熱售中</p>
+    </div>
+  </div>
+  <!-- Swiper -->
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide">Slide 10</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <!-- 票價資訊 -->
+  <div class="ticket">
+    <div class="ticket_all">
+      <div class="ticket_sale">
+
+      </div>
+      <div class="offer">
+        <div class="offer_title">
+
+        </div>
+        <div class="offer_vendor">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <!-- nav js -->
+  <script>
+    var mobile_nav_toggle = document.querySelector(".mobile_nav_toggle");
+    var mobile_nav = document.querySelector(".mobile_nav")
+    mobile_nav_toggle.onclick = function () {
+
+      mobile_nav.classList.toggle('active');
+    }
+  </script>
+  <!-- Swiper JS -->
+  <script src="../package/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <script src="path/to/swiper.min.js"></script>
 </body>
+
 </html>
