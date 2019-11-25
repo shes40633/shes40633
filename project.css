@@ -221,6 +221,74 @@ color: white;
     height: 100%;
     background-color: burlywood;
 }
+.offer_title{
+  margin: auto;
+  width: 100%;
+height:30%;
+  background-color: cornflowerblue;
+
+}
+.offer_title p{
+  margin: 0;
+}
+.offer_vendor{
+  width: 100%;
+  height: 70%;  
+}
+.offer_vendor_top{
+  width: 100%;
+  height: 50%;
+  background-color: cyan;
+  display: flex;
+}
+.offer_vendor_bot{
+  width: 100%;
+  height: 50%;
+  background-color: blueviolet;
+  display: flex;
+}
+.offer_vendor_top_left{
+  width: 30%;
+  height: 100%;
+  background-color: burlywood;
+}
+.offer_vendor_top_right{
+  width: 70%;
+  height: 100%;
+}
+.offer_vendor_bot_left{
+  width: 30%;
+  height: 100%;
+  background-color: chartreuse;
+}
+.offer_vendor_bot_right{
+  width: 70%;
+  height: 100%;
+}
+
+/* 關於親親 */
+.about_theater_all{
+  width: 100%;
+  height: 600px;
+}
+.about_theater{
+  width: 1170px;
+  height:600px;
+  margin: auto;
+  
+}
+.about_theater_content{
+  width: 100%;
+  height: 400px;
+  background-color: blue;
+}
+.about_theater_bg{
+  width: 100%;
+  height:200px;
+  display: flex;
+  background-color: cadetblue;
+}
+
   
   @media(max-width:1680px) {
   
