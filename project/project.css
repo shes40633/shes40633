@@ -136,50 +136,57 @@
     text-decoration: none;
     padding: 25px 30px;
   }
-  
+  /* bammer */
   .banner{
-      width: 100%;
-      height: 650px;
-      
+      width: 100%;   
   }
   .banner_picture{
       width: 100%;
-      height: 650px;
+      height: calc(100vh - 100px);
       position:relative;
     overflow:hidden;
 
   }
   .banner_picture img{
     width: 100%;
-    height: 650px;
     position: absolute;
     min-width: 100%; 
     min-height: 100%;
-
   }
-
+/* 關於電影 */
 /* 熱售中 */
 .sale{
     width: 100%;
-    height: 50px;
-    background-color:#2660a9;
     margin: 0 0 20px 0;
 }
-.sale_text{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about_movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_movie p {
+  margin: 20px 0 50px;
+  font-size: 48px;
+  color: black;
+}
+.sale_text{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sale_text p{
-margin: 0;
-font-size: 40px;
-color: white;
+  margin: 0;
+  font-size: 36px;
+  color: black;
 }
   /* Swiper css */
 
   .show{
-    width: 1170px;
+    
+    opacity: 1;
+  }
+  .in{
+    max-width: 1140px;
     height: 80%;
     margin: auto;
   }
@@ -195,11 +202,13 @@ color: white;
     justify-content: center;
     align-items: center;
   }
+   /* modal */
   .button_w{
     width: 100%;
     height: 100%;
   }
   .button_w button{
+    
     width: 100%;
     height: 100%;
     padding: 0;
@@ -214,14 +223,31 @@ color: white;
     width: 100%;
     height: 100%;
   }
+  .modal{
+    position: fixed;
+    top:0;
+    left:0;
+    outline: 0;
+  }
 /* 票價資訊 */
+.container{
+  padding: 0;
+}
 .ticket{
     width: 100%;
-    height:600px;
+    height:800px;
+}
+.ticket_title{
+  font-size: 48px;
+  line-height: 48px;
+  color:black;
+  margin: 60px 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ticket_all{
-    width: 1170px;
-    height:100%;
+    height:calc(100% - 100px);
     display: flex;
     margin: auto;
 }
@@ -287,16 +313,27 @@ height:30%;
   width: 100%;
   height: 600px;
 }
+.about_theater_title{
+  font-size: 48px;
+  line-height: 48px;
+  color:black;
+  margin: 60px 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .about_theater{
-  width: 1170px;
-  height:600px;
+  max-width: 1140px; 
   margin: auto;
   
 }
 .about_theater_content{
   width: 100%;
-  height: 400px;
-  background-color: blue;
+}
+.about_theater_content{
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 .about_theater_bg{
   width: 100%;
@@ -304,7 +341,10 @@ height:30%;
   display: flex;
   background-color: cadetblue;
 }
-
+.col-4 img{
+  width: 100%;
+  height: 100%;
+}
   
   @media(max-width:1680px) {
   

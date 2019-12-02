@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 <link rel="stylesheet" href="project.css">
 
@@ -62,155 +63,168 @@
       <img src="./img/專題bnner.jpg">
     </div>
   </div>
-  
+  <!-- 關於電影 -->
   <!-- 熱售中 -->
   <div class="sale">
+    <div class="about_movie">
+      <p>關於電影</p>
+    </div>
     <div class="sale_text">
       <p>熱售中</p>
     </div>
   </div>
 
-    
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+
+
+  <!-- Swiper -->
+  <div class="show in">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="button_w">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+              <img src="./img/專題bnner.jpg" alt="">
             </button>
           </div>
-          <div class="modal-body">
-            eedfsdf
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          eedfsdf
         </div>
       </div>
     </div>
-  <!-- Swiper -->
-<div class="show">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="button_w">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-          <img src="./img/專題bnner.jpg" alt="">
-        </button>
-      </div>
-    </div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-      <div class="swiper-slide">Slide 10</div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
   </div>
-</div>
   <!-- 票價資訊 -->
-  <div class="ticket">
-    <div class="ticket_all">
-      <div class="ticket_sale">
+  <div class="container">
+    <div class="ticket">
+      <div class="ticket_title">
+        <p>票價資訊</p>
+      </div>
+      <div class="ticket_all ">
+        <div class="ticket_sale">
           <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col"></th>
-                  <th scope="col">2D</th>
-                  <th scope="col">3D</th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">全票</th>
-                  <td>210元</td>
-                  <td>300元</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">半票</th>
-                  <td>190元</td>
-                  <td>280元</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">會員票</th>
-                  <td>190元</td>
-                  <td>280元</td>  
-                  <td></td>               
-                </tr>
-                <tr>
-                    <th scope="row">兒童票</th>
-                    <td>150元</td>
-                    <td>210元</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                      <th scope="row">愛心票</th>
-                      <td>105元</td>
-                      <td>210元</td>
-                      <td></td>
-                    </tr>
-              </tbody>
-            </table>
-      </div>
-      <div class="offer">
-        <div class="offer_title">
-         <p>合作廠商</p>
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">2D</th>
+                <th scope="col">3D</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">全票</th>
+                <td>210元</td>
+                <td>300元</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">半票</th>
+                <td>190元</td>
+                <td>280元</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">會員票</th>
+                <td>190元</td>
+                <td>280元</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">兒童票</th>
+                <td>150元</td>
+                <td>210元</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">愛心票</th>
+                <td>105元</td>
+                <td>210元</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="offer_vendor">
-         <div class="offer_vendor_top">
-          <div class="offer_vendor_top_left">
-
+        <div class="offer">
+          <div class="offer_title">
+            <p>合作廠商</p>
           </div>
-          <div class="offer_vendor_top_right">
+          <div class="offer_vendor">
+            <div class="offer_vendor_top">
+              <div class="offer_vendor_top_left">
 
+              </div>
+              <div class="offer_vendor_top_right">
+
+              </div>
+            </div>
+            <div class="offer_vendor_bot">
+              <div class="offer_vendor_bot_left">
+
+              </div>
+              <div class="offer_vendor_bot_right">
+
+              </div>
+            </div>
           </div>
-         </div>
-         <div class="offer_vendor_bot">
-        <div class="offer_vendor_bot_left">
-
-        </div>
-        <div class="offer_vendor_bot_right">
-
-        </div>
-         </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- 關於親親 -->
+      <!-- 關於親親 -->
   <div class="about_theater_all">
-  <div class="about_theater">
-    <div class="about_theater_content">
+      <div class="about_theater_title">
+        <p>
+          關於親親
+        </p>
+      </div>
+      <div class="about_theater">
+        <div class="row">
+          <div class="about_theater_content">
+            <img src="./img//親親簡介.jpg" alt="">
+          </div>
+          <div class="about_theater_bg">
+            <div class="col-4">
+              <img src="./img/電影院裡圖.jpg">
+            </div>
+            <div class="col-4">
+              <img src="./img/電影院裡圖-2.jpeg">
+            </div>
+            <div class="col-4">
+              <img src="./img/電影院裡圖-3.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
 
-    </div>
-    <div class="about_theater_bg">
-      <div class="about_theater_bg_1">
-        <img src="">
-      </div>
-      <div class="about_theater_bg_2">
-        <img src="">
-      </div>
-      <div class="about_theater_bg_3">
-        <img src="">
-      </div>
-    </div>
-  </div>
-  </div>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <!-- nav js -->
   <script>
@@ -222,9 +236,15 @@
     }
   </script>
   <!-- bootstrap js -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
   <!-- Swiper JS -->
   <script src="../package/js/swiper.min.js"></script>
 
