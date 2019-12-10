@@ -60,7 +60,20 @@
   <!-- banner -->
   <div class="banner">
     <div class="banner_picture">
-      <img src="./img/專題bnner.jpg">
+      <div class="swiper-container banner_swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./img/專題bnner.jpg">
+            </a>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+      </div>
+
+
     </div>
   </div>
   <!-- 關於電影 -->
@@ -78,7 +91,7 @@
 
   <!-- Swiper -->
   <div class="show in">
-    <div class="swiper-container">
+    <div class="swiper-container product_swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="button_w">
@@ -87,14 +100,6 @@
             </button>
           </div>
         </div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
       </div>
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
@@ -103,23 +108,7 @@
       <div class="swiper-button-prev"></div>
     </div>
   </div>
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          eedfsdf
-        </div>
-      </div>
-    </div>
-  </div>
+
   <!-- 票價資訊 -->
   <div class="container">
     <div class="ticket">
@@ -223,6 +212,40 @@
       </div>
     </div>
     
+
+      <!-- product_Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">野蠻遊戲</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal_all">
+          <div class="modal_all_bg">
+            <img src="./img//專題bnner.jpg" alt="">
+          </div>
+          <div class="modal_content">
+          <div class="modal_content_time">
+            <div class="product_time">
+
+            </div>
+          </div>
+          <div class="modal_content_text">
+           <div class="product_text">
+             
+           </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
@@ -250,7 +273,19 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper('.swiper-container', {
+    // 
+ var swiper = new Swiper('.banner_swiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+    });
+// product_swiper
+    var swiper = new Swiper('.product_swiper', {
       slidesPerView: 3,
       spaceBetween: 30,
       slidesPerGroup: 3,

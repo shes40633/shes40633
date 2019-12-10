@@ -138,18 +138,21 @@
   }
   /* bammer */
   .banner{
-      width: 100%;   
+    width: 100%;   
   }
   .banner_picture{
-      width: 100%;
-      height: calc(100vh - 100px);
-      position:relative;
-    overflow:hidden;
+    width: 100%;
+    height: calc(100vh - 100px);
+  }
+  .banner_picture a{
+    width: 100%;
+    height: 100%;
 
+    overflow:hidden;
   }
   .banner_picture img{
     width: 100%;
-    position: absolute;
+    height: 100%;
     min-width: 100%; 
     min-height: 100%;
   }
