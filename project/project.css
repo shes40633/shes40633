@@ -185,7 +185,6 @@
   /* Swiper css */
 
   .show{
-    
     opacity: 1;
   }
   .in{
@@ -206,32 +205,46 @@
     align-items: center;
   }
    /* modal */
+   .modal{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    outline: 0;
+    
+  }
+  .modal-dialog {
+    position: relative;
+    margin: 10px;
+    
+  }
+  .modal-content{
+    width: 900px;
+    background-color: #fff;
+    outline: 0;
+  }
   .button_w{
     width: 100%;
     height: 100%;
   }
-  .button_w button{
-    
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    border: 0;
-  }
-  .button_w button img{
- width: 100%;
- height: 100%;
-  }
-  .model{
-    width: 100%;
-    height: 100%;
-  }
-  .modal{
-    position: fixed;
-    top:0;
-    left:0;
-    outline: 0;
-  }
+
+ .movie_img{
+  width: 100%;
+  height: 90%;
+ }
+ .movie_img img{
+  width: 100%;
+  height: 100%;
+ }
+.movie_name{
+  width: 100%;
+  height: 20%;
+  display: block;
+  font-size: 28px;
+  color: #003e52;
+  padding: 5px 0;
+  text-align: center;
+}
 /* 票價資訊 */
 .container{
   padding: 0;
@@ -389,7 +402,6 @@ height:30%;
         padding: 0 0 0 120px;
   
     }
-  
   
   }
   @media (max-width: 767px) {
