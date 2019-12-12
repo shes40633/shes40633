@@ -126,22 +126,30 @@
 
   <!-- 即將上映Swiper -->
   <div class="coming in">
-    <div class="swiper-container coming_swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="button_w">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-              <img src="./img/專題bnner.jpg" alt="">
-            </button>
+      <div class="swiper-container product_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="button_w">
+                <!-- modal -->
+                <a data-toggle="modal" data-target="#exampleModalLong">
+                  <div class="movie_img">
+                    <img src="./img/專題bnner.jpg" alt="">
+                  </div>
+                  <div class="movie_name">
+                    <p>
+                      野蠻遊戲
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
   </div>
 
   <!-- 票價資訊 -->
@@ -254,9 +262,13 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">野蠻遊戲</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              野蠻遊戲
+            </h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+              <span aria-hidden="true">
+
+              </span>
             </button>
           </div>
           <div class="modal-body">
