@@ -328,7 +328,11 @@ height:30%;
 /* 關於親親 */
 .about_theater_all{
   width: 100%;
-  height: 600px;
+  height: auto;
+}
+.row{
+  max-width: 1140px; 
+  margin: auto;
 }
 .about_theater_title{
   font-size: 48px;
@@ -338,11 +342,6 @@ height:30%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.about_theater{
-  max-width: 1140px; 
-  margin: auto;
-  
 }
 .about_theater_content {
   width: 100%;
