@@ -207,7 +207,6 @@ nav {
   position: absolute;
   top: 0px;
   left: 0px;
-  
   background-color: rgb(34, 128, 200);
 }
 .info a {
@@ -221,7 +220,7 @@ nav {
   width: 25%;
   height: 384px;
   position: relative;
-  z-index: 2;
+  z-index: 5;
 
 }
 
@@ -231,7 +230,7 @@ nav {
   width: 25%;
   height: 384px;
   position: relative;
-  z-index: 2;
+  z-index: 5;
 
 }
 
@@ -240,14 +239,14 @@ nav {
   width: 25%;
   height: 384px;
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 .info .col-xl-3:nth-child(4) {
   background-color: rgb(105, 229, 110);
   width: 25%;
   height: 384px;
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 .info .col-xl-3:nth-child(1):hover {
   background-color: rgb(37, 142, 222);
@@ -275,7 +274,6 @@ nav {
   position: absolute;
   top: 0px;
   right: 0px;
-  
   background-color: rgb(95, 207, 99);
 }
 /* card_1程式 */
