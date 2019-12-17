@@ -633,7 +633,11 @@ nav {
     line-height: 40px;
     font-weight: 600;
 }
-.card_8_content_1_top p:hover{
+
+.card_8_content_1_top:hover p {
+  color: rgb(0, 0, 0);
+}
+.card_8_content_2_bot_text:hover label {
   color: rgb(0, 0, 0);
 }
 .card_8_content_2_top{
@@ -649,7 +653,7 @@ nav {
     line-height: 40px;
     font-weight: 600;
 }
-.card_8_content_2_top p:hover{
+.card_8_content_2_top:hover p{
   color: rgb(0, 0, 0);
 }
 .card_8_content_3_top{
