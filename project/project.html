@@ -58,97 +58,85 @@
     </nav>
   </div>
   <!-- banner -->
-  <div class="banner">
-    <div class="banner_picture">
-      <div class="swiper-container banner_swiper">
+  <section class=section1>
+    <div class="banner">
+      <div class="banner_picture">
+        <div class="swiper-container banner_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./img/專題bnner.jpg">
+              </a>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class=section2>
+
+    <div class="container">
+
+
+      <!-- 關於電影 -->
+      <!-- 熱售中 -->
+      <div class="row row_sale">
+        <div class="col-12 col-lg-7 sale">
+          <div class="about_movie">
+            <h2>關於電影</h2>
+            <ul class="movies">
+
+              <li class="movies_title">
+                <a href="">
+                  現正熱映
+                </a>
+              </li>
+              <li class="movies_title">
+                <a href="">
+                  即將上映
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <!-- Swiper -->
+
+      <div class="swiper-container product_swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <a href="">
-              <img src="./img/專題bnner.jpg">
-            </a>
+            <div class="button_w">
+              <!-- modal -->
+              <a data-toggle="modal" data-target="#exampleModalLong">
+                <div class="movie_img">
+                  <img src="./img/專題bnner.jpg" alt="">
+                </div>
+                <div class="movie_name">
+                  <p>
+                    野蠻遊戲
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
-
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
-  </div>
-  <!-- 關於電影 -->
-  <!-- 熱售中 -->
-  <div class="sale">
-    <div class="about_movie">
-      <p>關於電影</p>
-    </div>
-    <div class="sale_text">
-      <p>熱售中</p>
-    </div>
-  </div>
-
-  <!-- Swiper -->
-  <div class="show in">
-    <div class="swiper-container product_swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="button_w">
-            <!-- modal -->
-            <a data-toggle="modal" data-target="#exampleModalLong">
-              <div class="movie_img">
-                <img src="./img/專題bnner.jpg" alt="">
-              </div>
-              <div class="movie_name">
-                <p>
-                  野蠻遊戲
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </div>
-
-  <!-- 即將上映 -->
-  <div class="sale">
-    <div class="about_movie">
-      <p>即將上映</p>
-    </div>
-  </div>
+  </section>
 
 
-
-  <!-- 即將上映Swiper -->
-  <div class="coming in">
-    <div class="swiper-container product_swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="button_w">
-            <!-- modal -->
-            <a data-toggle="modal" data-target="#exampleModalLong">
-              <div class="movie_img">
-                <img src="./img/專題bnner.jpg" alt="">
-              </div>
-              <div class="movie_name">
-                <p>
-                  野蠻遊戲
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </div>
 
   <!-- 票價資訊 -->
   <div class="container">
@@ -254,19 +242,19 @@
     </div>
 
     <!-- 影城資訊 -->
-<div class="gamp_all">
-  <div class="gamp_title">
-    <p>
-      影城資訊
-    </p>
-  </div>
-  <div class="gamp_content">
+    <div class="gamp_all">
+      <div class="gamp_title">
+        <p>
+          影城資訊
+        </p>
+      </div>
+      <div class="gamp_content">
 
-  </div>
-  
+      </div>
 
 
-</div>
+
+    </div>
 
 
 
@@ -359,26 +347,7 @@
       },
     });
 
-    // coming_swiper
-    var swiper = new Swiper('.coming_swiper', {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      slidesPerGroup: 3,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+    
   </script>
 
 </body>

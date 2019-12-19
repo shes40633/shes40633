@@ -158,40 +158,49 @@
   }
 /* 關於電影 */
 /* 熱售中 */
+.section2{
+  position: relative;
+}
+.movies{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  position: relative;
+  list-style-type: none;
+  display: flex;
+}
+.movies_title{
+  width: 50%;
+  font-size: 24px;
+  line-height: 28px;
+  color:black;
+  font-family: Montserrat, sans-serif, 微軟正黑體;
+  font-weight: 500;
+}
+
+.row_sale{
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .sale{
-    width: 100%;
-    margin: 0 0 20px 0;
+  text-align: center;
 }
 .about_movie {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-.about_movie p {
-  margin: 20px 0 50px;
-  font-size: 48px;
-  color: black;
+.about_movie h2{
+  color:black;
+  word-spacing: 10px;
 }
-.sale_text{ 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sale_text p{
-  margin: 0;
-  font-size: 36px;
-  color: black;
-}
+
+
   /* Swiper css */
 
-  .show{
-    opacity: 1;
-  }
-  .in{
-    max-width: 1140px;
-    height: 80%;
-    margin: auto;
-  }
+ 
   .swiper-container {
     width: 100%;
     height: 100%;
