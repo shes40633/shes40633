@@ -985,6 +985,9 @@ nav {
 .card_8_container {
   width: 1336px;
 }
+.rect{
+  right: 30px;
+}
 }
 
 @media(max-width:1460px) {
@@ -1081,6 +1084,9 @@ nav {
 }
 .card_8_container {
   width: 1136px;
+}
+.rect{
+  right: -200px;
 }
 }
 
@@ -1215,9 +1221,7 @@ nav {
   .card_6_p{
     padding: 0px 0px 0px 4px;
   }
-  .card_6_pic{
-    right: -20vw;
-  }
+
   .card_6_pic img{
     max-width: 70vw;
   }
@@ -1323,9 +1327,7 @@ nav {
  .sphere {
       padding: 61px 53px 50px;
   }
-  .card_6_pic{
-    right: -20vw;
-  }
+
   .card_6_pic img{
     max-width: 60vw;
   }
@@ -1336,6 +1338,10 @@ nav {
       width: 100%;
       height: auto;
       min-height: 260px;
+    }
+    .rect{
+    top: -300px;
+    right: 100px;
     }
 }
 
@@ -1383,6 +1389,9 @@ nav {
   .card_6_pic{
     display: none;
   }
+  .rect{
+  display: none;
+    }
 }
 @media (max-width: 500px){
   .card_1_content_top h2{

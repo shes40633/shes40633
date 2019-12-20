@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
   integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 <link rel="stylesheet" href="project.css">
 
 <body>
@@ -89,19 +91,17 @@
       <div class="row row_sale">
         <div class="col-12 col-lg-7 sale">
           <div class="about_movie">
-            <h2>關於電影</h2>
             <ul class="movies">
-
-              <li class="movies_title">
-                <a href="">
+              <a class="movies_title bg_red" href="">
+                <li>
                   現正熱映
-                </a>
-              </li>
-              <li class="movies_title">
-                <a href="">
+                </li>
+              </a>
+              <a class="movies_title bg_blue" href="">
+                <li>
                   即將上映
-                </a>
-              </li>
+                </li>
+              </a>
             </ul>
 
           </div>
@@ -110,13 +110,13 @@
       <!-- Swiper -->
 
       <div class="swiper-container product_swiper">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper slider-produtos-wrap">
           <div class="swiper-slide">
             <div class="button_w">
               <!-- modal -->
               <a data-toggle="modal" data-target="#exampleModalLong">
-                <div class="movie_img">
-                  <img src="./img/專題bnner.jpg" alt="">
+                <div class="movie_img swiper_button_left">
+                  <img src="./img//images.png" alt="">
                 </div>
                 <div class="movie_name">
                   <p>
@@ -126,12 +126,45 @@
               </a>
             </div>
           </div>
+
+
+
+          <div class="swiper-slide">
+            <div class="button_w">
+              <!-- modal -->
+              <a data-toggle="modal" data-target="#exampleModalLong">
+                <div class="movie_img">
+                  <img src="./img//images.png" alt="">
+                </div>
+                <div class="movie_name">
+                  <p>
+                    野蠻遊戲
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="button_w">
+              <!-- modal -->
+              <a data-toggle="modal" data-target="#exampleModalLong">
+                <div class="movie_img">
+                  <img src="./img//images.png" alt="">
+                </div>
+                <div class="movie_name">
+                  <p>
+                    野蠻遊戲
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
@@ -139,155 +172,195 @@
 
 
   <!-- 票價資訊 -->
-  <div class="container">
-    <div class="ticket">
-      <div class="ticket_title">
-        <p>票價資訊</p>
-      </div>
-      <div class="ticket_all ">
-        <div class="ticket_sale">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col">2D</th>
-                <th scope="col">3D</th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">全票</th>
-                <td>210元</td>
-                <td>300元</td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">半票</th>
-                <td>190元</td>
-                <td>280元</td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">會員票</th>
-                <td>190元</td>
-                <td>280元</td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">兒童票</th>
-                <td>150元</td>
-                <td>210元</td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">愛心票</th>
-                <td>105元</td>
-                <td>210元</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="offer">
-          <div class="offer_title">
-            <p>合作廠商</p>
-          </div>
-          <div class="offer_vendor">
-            <div class="offer_vendor_top">
-              <div class="offer_vendor_top_left">
+  <Section class="section3">
+    <div class="container">
 
-              </div>
-              <div class="offer_vendor_top_right">
 
-              </div>
+      <div class="row">
+        <div class="col-12 col-xl-6 ">
+          <div class="ticket">
+            <div class="ticket_title">
+              <p>票價資訊</p>
             </div>
-            <div class="offer_vendor_bot">
-              <div class="offer_vendor_bot_left">
+            <div class="ticket_all ">
 
-              </div>
-              <div class="offer_vendor_bot_right">
+              <table id="Table7" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                  <tr>
+                    <td height="600" nowrap="nowrap" align="center">
+                      <table cellspacing="0" cellpadding="4" align="Center" rules="all" border="1"
+                        id="ctl00_ContentPlaceHolder1_dgSong"
+                        style="background-color:White;border-color:White;border-width:1px;border-style:solid;width:100%;border-collapse:collapse;">
+                        <tbody>
+                          <tr align="center" valign="middle" style="color:White;background-color:rgb(71, 135, 161);">
+                    </td>
+                    <td valign="middle" height="100" style="width:34%;"></td>
+                    <td valign="middle">2D</td>
+                    <td valign="middle">3D</td>
+                  </tr>
+                  <tr align="center" valign="middle" height="100" style="background-color:greenyellow;">
+                    <td valign="middle">全票 </td>
+                    <td valign="middle">210元 </td>
+                    <td valign="middle">300元 </td>
+                  </tr>
+                  <tr align="center" valign="middle" height="100" style="background-color:#FA878E;">
+                    <td valign="middle">半票 </td>
+                    <td valign="middle">190元 </td>
+                    <td valign="middle">280元 </td>
+                  </tr>
+                  <tr align="center" valign="middle" height="100" style="background-color:greenyellow;">
+                    <td valign="middle">會員票 </td>
+                    <td valign="middle">190元 </td>
+                    <td valign="middle">280元 </td>
+                  </tr>
+                  <tr align="center" valign="middle" height="100" style="background-color:#FA878E;">
+                    <td valign="middle">兒童票 </td>
+                    <td valign="middle">150元 </td>
+                    <td valign="middle">210元 </td>
+                  </tr>
+                  <tr align="center" valign="middle" height="100" style="background-color:greenyellow;">
+                    <td valign="middle">愛心票 </td>
+                    <td valign="middle">100元 </td>
+                    <td valign="middle">210元 </td>
+                  </tr>
+                </tbody>
+              </table>
+              </td>
+              </tr>
+              </tbody>
+              </table>
 
-              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xl-6 ">
+          <div class="search-movie">
+            <div class="search-movie_title">
+              <p>Search Movie</p>
+            </div>
+            <form action="" class=form>
+              <select name="" id="search" class=search>
+                <option value="">請選擇電影</option>
+                <option value="">野蠻遊戲</option>
+              </select>
+            </form>
+            <button type="button" class="btn btn-primary submit">熱門電影查詢</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </Section>
+
+
+
+  <!-- 關於親親 -->
+
+  <section class="section4">
+    <div class="container">
+      <div class="row">
+
+
+        <div class="col-12">
+          <div class="about_theater_title">
+            <p>
+              關於親親
+            </p>
+          </div>
+
+
+          <div class="media">
+            <img src="./img/電影院裡圖.jpg" class="align-self-center mr-3 img_size" data-aos="fade-right"
+              data-aos-offset="100" data-aos-easing="ease-in-sine" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0">影城簡介</h5>
+              <p>親親影城成立於1986年,現設有7個國際標準的電影廳院,與全球同步播映首輪影片
+                。本影城自民國８１年營業之初即為北屯住宅圈帶來繁榮契機，率先採用舒適進口「ＰＵ麗池座椅」
+                ，影城廳內座位寬敞舒適．劇場式的階梯座椅設計，提供給觀賞者無障礙的視野空間；以及置杯架，提供一個舒適愉悅的官片環境。</p>
+              <p class="mb-0">其中二廳最新裝置的JBL新型「三音錄主喇叭」將音質效果大大提升</p>
+              <p class="mb-0">安全的環境設計，客層大多以家庭成員位主；除了電影院之外，親親影城所在大樓逐漸發展成電影娛樂城，附設Ｂ１湯姆熊遊戲場ˋ１F哈拉麵包ˋ咖啡ˋ２F網咖，成為當地居民休閒娛樂的重心之一。
+              </p>
+            </div>
+          </div>
+
+          <div class="media">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Media object</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+              odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+              fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+            <img src="./img/電影院裡圖-2.jpeg" class="ml-3 img_size" data-aos="fade-left" data-aos-offset="100"
+              data-aos-easing="ease-in-sine" alt="...">
+          </div>
+
+          <div class="media">
+            <img src="./img//電影院裡圖-3.jpg" class="align-self-center mr-3 img_size" data-aos="zoom-in-right" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0">Center-aligned media</h5>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.</p>
+              <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
+                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
+
+          <div class="media">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Media object</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+              odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+              fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+            <img src="./img//images.png" class="ml-3 img_size" data-aos="zoom-in-left" alt="...">
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- product_Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">
+            野蠻遊戲
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+
+            </span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <!-- <img src="./img//專題bnner.jpg" alt=""> -->
+            </div>
+            <div class="col-md-6 pro_text">
+
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- 關於親親 -->
-    <div class="about_theater_all">
-      <div class="about_theater_title">
-        <p>
-          關於親親
-        </p>
-      </div>
-      <div class="about_theater">
-        <div class="row">
-          <div class="about_theater_content">
-            <img src="./img//親親簡介.jpg" alt="">
-          </div>
-          <div class="about_theater_bg">
-            <div class="col-4">
-              <img src="./img/電影院裡圖.jpg">
-            </div>
-            <div class="col-4">
-              <img src="./img/電影院裡圖-2.jpeg">
-            </div>
-            <div class="col-4">
-              <img src="./img/電影院裡圖-3.jpg">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 影城資訊 -->
-    <div class="gamp_all">
-      <div class="gamp_title">
-        <p>
-          影城資訊
-        </p>
-      </div>
-      <div class="gamp_content">
-
-      </div>
-
-
-
-    </div>
-
-
-
-
-
-    <!-- product_Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">
-              野蠻遊戲
-            </h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">
-
-              </span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6 text-center">
-                <!-- <img src="./img//專題bnner.jpg" alt=""> -->
-              </div>
-              <div class="col-md-6 pro_text">
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
   </div>
 
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
@@ -312,6 +385,12 @@
     crossorigin="anonymous"></script>
   <!-- Swiper JS -->
   <script src="../package/js/swiper.min.js"></script>
+  <!-- aos js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 
   <!-- Initialize Swiper -->
   <script>
@@ -329,7 +408,7 @@
     // product_swiper
     var swiper = new Swiper('.product_swiper', {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 28,
       slidesPerGroup: 3,
       loop: true,
       loopFillGroupWithBlank: true,
@@ -341,13 +420,10 @@
         el: '.swiper-pagination',
         clickable: true,
       },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+
     });
 
-    
+
   </script>
 
 </body>
