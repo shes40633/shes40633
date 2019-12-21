@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 <link rel="stylesheet" href="project.css">
 
 <body>
@@ -86,13 +88,15 @@
     <div class="container">
 
 
+
+
       <!-- 關於電影 -->
       <!-- 熱售中 -->
       <div class="row row_sale">
         <div class="col-12 col-lg-7 sale">
           <div class="about_movie">
             <ul class="movies">
-              <a class="movies_title bg_red" href="">
+              <a class="movies_title bg_red " href="">
                 <li>
                   現正熱映
                 </li>
@@ -108,63 +112,129 @@
         </div>
       </div>
       <!-- Swiper -->
+      <div class="all_movie">
 
-      <div class="swiper-container product_swiper">
-        <div class="swiper-wrapper slider-produtos-wrap">
-          <div class="swiper-slide">
-            <div class="button_w">
-              <!-- modal -->
-              <a data-toggle="modal" data-target="#exampleModalLong">
-                <div class="movie_img swiper_button_left">
-                  <img src="./img//images.png" alt="">
-                </div>
-                <div class="movie_name">
-                  <p>
-                    野蠻遊戲
-                  </p>
-                </div>
-              </a>
+
+
+
+        <div class="swiper-container product_swiper movie_live ">
+          <div class="swiper-wrapper slider-produtos-wrap">
+            <div class="swiper-slide">
+              <div class="button_w">
+                <!-- modal -->
+                <a data-toggle="modal" data-target="#exampleModalLong">
+                  <div class="movie_img swiper_button_left">
+                    <img src="./img//images.png" alt="">
+                  </div>
+                  <div class="movie_name">
+                    <p>
+                      野蠻遊戲
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
 
 
 
-          <div class="swiper-slide">
-            <div class="button_w">
-              <!-- modal -->
-              <a data-toggle="modal" data-target="#exampleModalLong">
-                <div class="movie_img">
-                  <img src="./img//images.png" alt="">
-                </div>
-                <div class="movie_name">
-                  <p>
-                    野蠻遊戲
-                  </p>
-                </div>
-              </a>
+            <div class="swiper-slide">
+              <div class="button_w">
+                <!-- modal -->
+                <a data-toggle="modal" data-target="#exampleModalLong">
+                  <div class="movie_img">
+                    <img src="./img//images.png" alt="">
+                  </div>
+                  <div class="movie_name">
+                    <p>
+                      野蠻遊戲
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="swiper-slide">
-            <div class="button_w">
-              <!-- modal -->
-              <a data-toggle="modal" data-target="#exampleModalLong">
-                <div class="movie_img">
-                  <img src="./img//images.png" alt="">
-                </div>
-                <div class="movie_name">
-                  <p>
-                    野蠻遊戲
-                  </p>
-                </div>
-              </a>
+            <div class="swiper-slide">
+              <div class="button_w">
+                <!-- modal -->
+                <a data-toggle="modal" data-target="#exampleModalLong">
+                  <div class="movie_img">
+                    <img src="./img//images.png" alt="">
+                  </div>
+                  <div class="movie_name">
+                    <p>
+                      野蠻遊戲
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
+
+
           </div>
-
-
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+
+
+
+        <div class="swiper-container comming_swiper movie_live show">
+          <div class="swiper-wrapper slider-produtos-wrap">
+            <div class="swiper-slide">
+              <div class="button_w">
+                <!-- modal -->
+                <a data-toggle="modal" data-target="#exampleModalcomming">
+                  <div class="movie_img swiper_button_left">
+                    <img src="./img//專題bnner.jpg" alt="">
+                  </div>
+                  <div class="movie_name">
+                    <p>
+                      野蠻遊戲
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide">
+              <div class="button_w">
+                <!-- modal -->
+                <a data-toggle="modal" data-target="#exampleModalcomming">
+                  <div class="movie_img">
+                    <img src="./img//images.png" alt="">
+                  </div>
+                  <div class="movie_name">
+                    <p>
+                      野蠻遊戲
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="button_w">
+                <!-- modal -->
+                <a data-toggle="modal" data-target="#exampleModalcomming">
+                  <div class="movie_img">
+                    <img src="./img//images.png" alt="">
+                  </div>
+                  <div class="movie_name">
+                    <p>
+                      野蠻遊戲
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -179,9 +249,16 @@
       <div class="row">
         <div class="col-12 col-xl-6 ">
           <div class="ticket">
-            <div class="ticket_title">
-              <p>票價資訊</p>
-            </div>
+
+            <h1 class="ml7">
+              <div class="text-wrapper ticket_title">
+                <p class="letters">
+                  票價資訊</p>
+              </div>
+            </h1>
+
+
+
             <div class="ticket_all ">
 
               <table id="Table7" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -261,75 +338,223 @@
   <section class="section4">
     <div class="container">
       <div class="row">
+        <div class="col-12_p  about_theater_bg">
 
 
-        <div class="col-12">
+
           <div class="about_theater_title">
             <p>
               關於親親
             </p>
           </div>
 
+          <div class="about_theater_content">
 
-          <div class="media">
-            <img src="./img/電影院裡圖.jpg" class="align-self-center mr-3 img_size" data-aos="fade-right"
-              data-aos-offset="100" data-aos-easing="ease-in-sine" alt="...">
-            <div class="media-body">
-              <h5 class="mt-0">影城簡介</h5>
-              <p>親親影城成立於1986年,現設有7個國際標準的電影廳院,與全球同步播映首輪影片
-                。本影城自民國８１年營業之初即為北屯住宅圈帶來繁榮契機，率先採用舒適進口「ＰＵ麗池座椅」
-                ，影城廳內座位寬敞舒適．劇場式的階梯座椅設計，提供給觀賞者無障礙的視野空間；以及置杯架，提供一個舒適愉悅的官片環境。</p>
-              <p class="mb-0">其中二廳最新裝置的JBL新型「三音錄主喇叭」將音質效果大大提升</p>
-              <p class="mb-0">安全的環境設計，客層大多以家庭成員位主；除了電影院之外，親親影城所在大樓逐漸發展成電影娛樂城，附設Ｂ１湯姆熊遊戲場ˋ１F哈拉麵包ˋ咖啡ˋ２F網咖，成為當地居民休閒娛樂的重心之一。
-              </p>
+            <div class="media">
+              <img src="./img/電影院裡圖.jpg" class="align-self-center mr-3 img_size" data-aos="fade-right"
+                data-aos-offset="100" data-aos-easing="ease-in-sine" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0">影城簡介</h5>
+                <p>親親影城成立於1986年,現設有7個國際標準的電影廳院,與全球同步播映首輪影片
+                  。本影城自民國８１年營業之初即為北屯住宅圈帶來繁榮契機，率先採用舒適進口「ＰＵ麗池座椅」
+                  ，影城廳內座位寬敞舒適．劇場式的階梯座椅設計，提供給觀賞者無障礙的視野空間；以及置杯架，提供一個舒適愉悅的官片環境。</p>
+                <p class="mb-0">其中二廳最新裝置的JBL新型「三音錄主喇叭」將音質效果大大提升</p>
+                <p class="mb-0">
+                  安全的環境設計，客層大多以家庭成員位主；除了電影院之外，親親影城所在大樓逐漸發展成電影娛樂城，附設Ｂ１湯姆熊遊戲場ˋ１F哈拉麵包ˋ咖啡ˋ２F網咖，成為當地居民休閒娛樂的重心之一。
+                </p>
+              </div>
             </div>
+
+            <div class="media">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">座椅</h5>
+                <p>全館座椅如享受超豪華747艙座，視野無礙。讓您100%與劇情全程參與。</p>
+              </div>
+              <img src="./img/電影院裡圖-2.jpeg" class="ml-3 img_size_big" data-aos="fade-left" data-aos-offset="100"
+                data-aos-easing="ease-in-sine" alt="...">
+            </div>
+
+            <div class="media">
+              <img src="./img//電影院裡圖-3.jpg" class="align-self-center mr-3 img_size_big" data-aos="zoom-in-right"
+                alt="...">
+              <div class="media-body">
+                <h5 class="mt-0">螢幕</h5>
+                <p>
+                  超廣角大螢幕視野遼闊，色彩ˋ亮度ˋ立體感完美呈現，保證撼動您的視覺感官。
+                </p>
+              </div>
+            </div>
+
+            <div class="media">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">音質</h5>
+                <P>採用杜比新型7.1環繞音響ˋSRDˋDTS電腦數位音效與JBL最頂級5674劇院級喇叭級CROW專業級擴大機總輸出值高達36000瓦。</P>
+              </div>
+              <img src="./img//images.png" class="ml-3 img_size" data-aos="zoom-in-left" alt="...">
+            </div>
+
           </div>
 
-          <div class="media">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">Media object</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
-              odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-              fringilla. Donec lacinia congue felis in faucibus.
-            </div>
-            <img src="./img/電影院裡圖-2.jpeg" class="ml-3 img_size" data-aos="fade-left" data-aos-offset="100"
-              data-aos-easing="ease-in-sine" alt="...">
-          </div>
 
-          <div class="media">
-            <img src="./img//電影院裡圖-3.jpg" class="align-self-center mr-3 img_size" data-aos="zoom-in-right" alt="...">
-            <div class="media-body">
-              <h5 class="mt-0">Center-aligned media</h5>
-              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
-                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                fringilla. Donec lacinia congue felis in faucibus.</p>
-              <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
-                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            </div>
-          </div>
 
-          <div class="media">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">Media object</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
-              odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-              fringilla. Donec lacinia congue felis in faucibus.
-            </div>
-            <img src="./img//images.png" class="ml-3 img_size" data-aos="zoom-in-left" alt="...">
-          </div>
+
+
+
 
         </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section5">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+
+          <div class="map_title">
+            <p>
+              交通資訊
+            </p>
+          </div>
+          <div class="map_all">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4593.067901506666!2d120.68987661543643!3d24.160287978909988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d5f78f73f31%3A0xe3910bbd1de3dd92!2zQ2hpbiBDaGlu6Kaq6Kaq5oiy6ZmiIC0g5Y-w5Lit6Zu75b2x6Zmi!5e1!3m2!1szh-TW!2stw!4v1576898464231!5m2!1szh-TW!2stw"
+                width="750" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+              </iframe>
+            </div>
+            <div class="map_content">
+              <div class="map_phone">
+                <h2>電話 :</h2>
+                <br>
+                <p>(04)22319111</p>
+              </div>
+              <div class="map_address">
+                <h2>地址 :</h2>
+                <br>
+                <p>台中市北區北屯路14-2號</p>
+              </div>
+
+              <div class="map_news">
+
+                <div class="map_news_title">
+                  <h2>交通資訊 :</h2>
+                  <br>
+                  <p class="map_news_text">大眾運輸</p>
+                  <br>
+                  <p class="map_text">搭乘公車的朋友們，請在</p>
+                  <br>
+                  <p>「監理站」下車</p>
+
+                </div>
+                <div>
+                  <b>搭乘的車號：</b>
+                  <ul>
+                    　<li>仁友客運：1、21、31、105</li>
+                    　<li>台中客運：8、14、15、16、102、132、136</li>
+                  </ul>
+                </div>
+                <div>
+                  <b>汽/機車：</b>
+                  <ul>
+                    　<li>機車：10元/次</li>
+                    　<li>汽車：30元/小時
+                      <br>
+                      (未滿30分鐘不予計費，超過30分鐘以1小時計費)
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
 
 
 
+        </div>
+      </div>
+    </div>
+  </section>
 
+
+  <section class="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+          <div class="business_title">
+            <p>
+              業務專區
+            </p>
+          </div>
+
+
+          <div class="card-deck">
+            <div class="card animated">
+              <img src="./img/images.png" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">
+                  哈拉麵包</h5>
+                <p class="card-text ">親親戲院樓下的哈拉麵包重新裝潢亮麗開幕啦！內裝整個大改造～變身時尚歐洲風，周圍的牆面還加入現在最流行的貨櫃元素！</p>
+
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/images.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">主題潮T</h5>
+                <p class="card-text ">情侶裝 潮T 班服 情侶t 純棉短t 短袖 貓狗親親 MIT快速出貨 加大尺碼</p>
+
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/images.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">布丁狗1</h5>
+                <p class="card-text">我是一隻布丁狗</p>
+
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
       </div>
     </div>
   </section>
 
 
 
+  <footer>
+    <div class="container">
+      <div class="row">
 
+        <div class="col-12">
+
+          <div class="footer_logo">
+            <img src="./img//images.png" alt="">
+          </div>
+          <div class="footer_text">
+
+            <ul>
+              　<li class="footer_li">電話 : (04)22319111</li>
+              　<li class="footer_li">地址 : 台中市北區北屯路14-2號</li>
+              　<li class="footer_li">停車場 : 本電影院附設汽/機車停車場</li>
+            </ul>
+          </div>
+          <div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
@@ -339,31 +564,184 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">
+          <h5 class="modal-title text-center" id="exampleModalLongTitle">
             野蠻遊戲
           </h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">
-
+              &times;
             </span>
           </button>
         </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-md-6 text-center">
-              <!-- <img src="./img//專題bnner.jpg" alt=""> -->
-            </div>
-            <div class="col-md-6 pro_text">
+            <div class="col-md-4 text-center">
+              <img src="./img//專題bnner.jpg" alt="">
 
+
+            </div>
+
+            <div class="col-md-8 pro_text">
+              <div class="movie_time">
+
+
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          電影時間選擇影廳
+                        </button>
+                      </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        時刻尚未提供,敬請稍候
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          電影介紹
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        描述4位留校察看的青少年意外中發現一款電玩遊戲，點選開始後竟離奇被帶進電玩世界裡，成為遊戲中的電玩角色。”史賓賽”變身成為「最狂冒險家」(巨石強森飾演)、足球員”冰箱”成為身材縮水的「天才魯宅」(凱文哈特飾演)、校園哈燒正妹”貝芬妮”更是變性成「中年發福的教授」(傑克布萊克飾演)、而邊緣人”瑪莎”則變身名模等級的
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          電影預告
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        <iframe width="400" height="315" src="https://www.youtube.com/embed/_O6SCxf_8cs" frameborder="0"
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="modal fade" id="exampleModalcomming" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLongTitle">
+            野蠻遊戲
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              &times;
+            </span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img src="./img//專題bnner.jpg" alt="">
+
+
+            </div>
+
+            <div class="col-md-8 pro_text">
+              <div class="movie_time">
+
+
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          電影時間選擇影廳
+                        </button>
+                      </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        電影未上映,敬請稍候
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          電影介紹
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        描述4位留校察看的青少年意外中發現一款電玩遊戲，點選開始後竟離奇被帶進電玩世界裡，成為遊戲中的電玩角色。”史賓賽”變身成為「最狂冒險家」(巨石強森飾演)、足球員”冰箱”成為身材縮水的「天才魯宅」(凱文哈特飾演)、校園哈燒正妹”貝芬妮”更是變性成「中年發福的教授」(傑克布萊克飾演)、而邊緣人”瑪莎”則變身名模等級的
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          電影預告
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        <iframe width="400" height="315" src="https://www.youtube.com/embed/_O6SCxf_8cs" frameborder="0"
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+
   <!-- nav js -->
   <script>
     var mobile_nav_toggle = document.querySelector(".mobile_nav_toggle");
@@ -384,9 +762,12 @@
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
   <!-- Swiper JS -->
-  <script src="../package/js/swiper.min.js"></script>
+
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <!-- aos js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- 動畫 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
   <script>
     AOS.init();
@@ -422,8 +803,65 @@
       },
 
     });
+    var swiper = new Swiper('.comming_swiper', {
+      slidesPerView: 3,
+      spaceBetween: 28,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
 
+    });
+  </script>
 
+  <script>
+    var movies_title = document.querySelectorAll(".movies_title");
+    var movie_live = document.querySelectorAll(".movie_live");
+    function clear() {
+      for (let i = 0; i < movies_title.length; i++) {
+        const movies_title_clear = movies_title[i];
+        movie_live[i].classList.remove("show");
+      }
+    }
+    for (let i = 0; i < movies_title.length; i++) {
+      const movies_add = movies_title[i];
+      movies_add.onclick = function () {
+        clear();
+        movie_live[i].classList.add("show");
+      }
+    }
+
+  </script>
+
+  <script>
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml7 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: true })
+      .add({
+        targets: '.ml7 .letter',
+        translateY: ["1.1em", 0],
+        translateX: ["0.55em", 0],
+        translateZ: 0,
+        rotateZ: [180, 0],
+        duration: 750,
+        easing: "easeOutExpo",
+        delay: (el, i) => 50 * i
+      }).add({
+        targets: '.ml7',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
   </script>
 
 </body>
