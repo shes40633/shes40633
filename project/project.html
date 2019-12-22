@@ -773,6 +773,27 @@
     AOS.init();
   </script>
 
+
+
+<script>
+  var movies_title = document.querySelectorAll(".movies_title");
+  var movie_live = document.querySelectorAll(".movie_live");
+  function clear() {
+    for (let i = 0; i < movies_title.length; i++) {
+      const movies_title_clear = movies_title[i];
+      movie_live[i].classList.remove("show");
+    }
+  }
+  for (let i = 0; i < movies_title.length; i++) {
+    const movies_add = movies_title[i];
+    movies_add.onclick = function () {
+      clear();
+      movie_live[i].classList.add("show");
+    }
+  }
+
+</script>
+
   <!-- Initialize Swiper -->
   <script>
     // 
@@ -821,24 +842,7 @@
     });
   </script>
 
-  <script>
-    var movies_title = document.querySelectorAll(".movies_title");
-    var movie_live = document.querySelectorAll(".movie_live");
-    function clear() {
-      for (let i = 0; i < movies_title.length; i++) {
-        const movies_title_clear = movies_title[i];
-        movie_live[i].classList.remove("show");
-      }
-    }
-    for (let i = 0; i < movies_title.length; i++) {
-      const movies_add = movies_title[i];
-      movies_add.onclick = function () {
-        clear();
-        movie_live[i].classList.add("show");
-      }
-    }
 
-  </script>
 
   <script>
     // Wrap every letter in a span

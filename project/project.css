@@ -255,6 +255,9 @@ nav {
 .modal-header {
   text-align: center;
 }
+.modal-title{
+  width: 100%;
+}
 .modal-dialog {
   max-width: 750px !important;
   margin: auto;
