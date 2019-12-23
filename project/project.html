@@ -96,16 +96,16 @@
         <div class="col-12 col-lg-7 sale">
           <div class="about_movie">
             <ul class="movies">
-              <a class="movies_title bg_red " href="">
+              <button class="movies_title bg_red " href="">
                 <li>
                   現正熱映
                 </li>
-              </a>
-              <a class="movies_title bg_blue" href="">
+              </button>
+              <button class="movies_title bg_blue" href="">
                 <li>
                   即將上映
                 </li>
-              </a>
+              </button>
             </ul>
 
           </div>
@@ -317,13 +317,17 @@
             <div class="search-movie_title">
               <p>Search Movie</p>
             </div>
-            <form action="" class=form>
+            <div action="" class=form>
               <select name="" id="search" class=search>
                 <option value="">請選擇電影</option>
                 <option value="">野蠻遊戲</option>
               </select>
-            </form>
-            <button type="button" class="btn btn-primary submit">熱門電影查詢</button>
+            </div>
+            <div class="search_button">
+              <button type="button" class="btn btn-primary submit">
+                熱門電影查詢
+              </button>
+            </div>
           </div>
         </div>
 
@@ -549,7 +553,7 @@
           </div>
           <div>
 
-            
+
           </div>
         </div>
       </div>
@@ -775,24 +779,25 @@
 
 
 
-<script>
-  var movies_title = document.querySelectorAll(".movies_title");
-  var movie_live = document.querySelectorAll(".movie_live");
-  function clear() {
-    for (let i = 0; i < movies_title.length; i++) {
-      const movies_title_clear = movies_title[i];
-      movie_live[i].classList.remove("show");
-    }
-  }
-  for (let i = 0; i < movies_title.length; i++) {
-    const movies_add = movies_title[i];
-    movies_add.onclick = function () {
-      clear();
-      movie_live[i].classList.add("show");
-    }
-  }
+  <script>
+    var movies_title = document.querySelectorAll(".movies_title");
+    var movie_live = document.querySelectorAll(".movie_live");
 
-</script>
+    function clear() {
+      for (let i = 0; i < movies_title.length; i++) {
+        const movies_title_clear = movies_title[i];
+        movie_live[i].classList.remove("show");
+      }
+    }
+    for (let i = 0; i < movies_title.length; i++) {
+      const movies_add = movies_title[i];
+      movies_add.onclick = function () {
+        clear();
+        movie_live[i].classList.add("show");
+      }
+    }
+
+  </script>
 
   <!-- Initialize Swiper -->
   <script>
@@ -815,7 +820,7 @@
       loop: true,
       loopFillGroupWithBlank: true,
       autoplay: {
-        delay: 2500,
+        delay: 4000,
         disableOnInteraction: false,
       },
       pagination: {
@@ -831,7 +836,7 @@
       loop: true,
       loopFillGroupWithBlank: true,
       autoplay: {
-        delay: 2500,
+        delay: 4000,
         disableOnInteraction: false,
       },
       pagination: {
