@@ -594,7 +594,10 @@ height: 100px;
   .footer .logo {
     width: 40px;
   }
-  
+  .submit {
+    position: relative;
+    left: calc(50% - 160px);
+    top: 80px;
 }
 @media (max-width: 1024px) {
   .nav_container {
@@ -685,7 +688,6 @@ height: 100px;
   .map_text {
     margin: 0;
   }
-
 }
 @media (max-width: 990px){
   .map iframe{
