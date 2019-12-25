@@ -127,7 +127,7 @@ nav {
   position: relative;
   display: block;
   text-decoration: none;
-  padding: 25px 30px;
+  padding: 25px 0px 25px 30px;
 }
 /* bammer */
 .banner {
@@ -355,9 +355,9 @@ td {
 
 /* 搜尋 */
 .search-movie {
-  height: calc(100% - 72px);
+  height: 601px;
   background-color: rgb(40, 40, 136);
-  margin-top: 72px;
+  margin-top: 87px;
 }
 .search-movie_title {
   padding-top: 160px;
@@ -382,6 +382,7 @@ td {
   color: inherit;
   font-size: 24px;
   height: 70px;
+
 }
 .search_button{
   width: 100%;
@@ -450,6 +451,10 @@ td {
   right: 0;
   top: 0;
 }
+.map iframe{
+  width: 750px;
+  height: 450px;
+}
 .map_phone h2 {
   font-size: 28px;
   line-height: 28px;
@@ -506,7 +511,7 @@ td {
   text-align: center;
 }
 .card img {
-  height: 600px;
+  height: 400px;
 }
 
 /* footer */
@@ -516,28 +521,54 @@ footer {
   height: 150px;
   background-color: gray;
   position: relative;
+  bottom: 3px;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  margin: 0px auto;
+  width: 1536px;
+}
+.footerlogo{
+  width: 200px;
+  height:150px;
 }
 .footer_logo{
-  position: absolute;
-  top:25px;
-  left:0px;
+  width: 120px;
+  height: 100px;
+  flex: 0 0 auto;
+  margin-top: 10px;
 }
 .footer_text{
-  position: absolute;
-  top:15px;
-  left:400px;
+  height: 48px;
+  flex: 1 1 auto;
+  padding: 0px 100px 0px 0px;
+  
 }
 .footer_logo img{
 width: 120px;
 height: 100px;
 }
+.footer_ul {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
 .footer_li {
+  width: auto;
   list-style-type: none;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
 }
 
 @media (max-width: 1680px) {
   .nav_container {
+    width: 1336px;
+  }
+  .footer {
     width: 1336px;
   }
 }
@@ -549,11 +580,21 @@ height: 100px;
   .nav_container {
     width: 1136px;
   }
+  .footer {
+    width: 1136px;
+  }
 }
 @media (max-width: 1280px) {
   .nav_container {
     width: 960px;
   }
+  .footer {
+    width: 960px;
+  }
+  .footer .logo {
+    width: 40px;
+  }
+  
 }
 @media (max-width: 1024px) {
   .nav_container {
@@ -568,7 +609,112 @@ height: 100px;
   .navbur {
     padding: 0 0 0 120px;
   }
+  .footer {
+    width: 100%;
+    position: relative;
+    padding: 0px 30px;
+  }
+  .footer .logo {
+    width: 80px;
+    flex: 0 0 auto;
+  }
+  .nav_footer {
+    width: 100%;
+    height: auto;
+    flex: 1 1 auto;
+    padding: 0px;
+  }
+  .img_size{
+    width: 250px;
+    height: 180px;
+  }
+  .img_size_big{
+    width: 320px;
+    height: 200px;
+  }
+  .media-body h5 {
+    font-size: 25px;
+    color: rgb(205, 195, 50);
+  }
+  .media-body p {
+    font-size: 16px;
+    
+  }
+  .map iframe{
+    width: 600px;
+    height: 350px;
+  }
+  .map_phone h2 {
+    font-size: 26px;
+    line-height: 26px;
+    margin: 0;
+  }
+  .map_phone p {
+    line-height: 16px;
+    font-size: 16px;
+  }
+  .map_address {
+    margin-top: 36px;
+  }
+  .map_address h2 {
+    font-size: 26px;
+    line-height: 26px;
+    margin: 0;
+  }
+  .map_address p {
+
+    font-size: 16px;
+  }
+  .map_news {
+    margin-top: 36px;
+  }
+  .map_news h2 {
+    font-size: 26px;
+    line-height: 26px;
+    margin: 0;
+  }
+  .map_news p {
+    line-height: 16px;
+    font-size: 16px;
+  }
+  .map_news_text {
+    margin: 0;
+    margin-top: 16px;
+    font-size: 26px;
+  }
+  .map_text {
+    margin: 0;
+  }
+
 }
+@media (max-width: 990px){
+  .map iframe{
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (max-width: 960px) {
+  .footer {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .img_size{
+    width: 230px;
+    height: 160px;
+  }
+  .img_size_big{
+    width: 290px;
+    height: 180px;
+  }
+  .media-body h5 {
+    font-size: 20px;
+    color: rgb(205, 195, 50);
+  }
+  .media-body p {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 767px) {
   .navbur {
     display: none;
@@ -576,9 +722,38 @@ height: 100px;
   .mobile_nav_toggle {
     display: block;
   }
+  .img_size{
+    width: 200px;
+    height: 120px;
+  }
+  .img_size_big{
+    width: 240px;
+    height: 140px;
+  }
+  .media-body h5 {
+    font-size: 12px;
+    color: rgb(205, 195, 50);
+  }
+  .media-body p {
+    font-size: 5px;
+  }
+  .map iframe{
+    width: 400px;
+    height: 250px;
+  }
 }
 @media (max-width: 670px) {
   nav .logo {
     width: 30px;
+  }
+  .footer {
+    width: 100%;
+  }
+
+  .footer_li {
+  font-size: 8px;
+  }
+  .footer_text{
+    padding: 0;
   }
 }
